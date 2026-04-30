@@ -1,0 +1,3 @@
+rule-name,customer segment,threshold
+Monitoring of big payments,customer-segment1,10000
+excessive card payments,customer-segment1,30000
