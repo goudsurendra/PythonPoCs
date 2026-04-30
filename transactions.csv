@@ -1,2 +1,3 @@
 account1,transaction1,1000,debit,card
 account2,transaction2,75000,credit,salary
+account3,transaction3,10000,debit,atm withdrawal
