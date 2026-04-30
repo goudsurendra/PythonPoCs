@@ -8,6 +8,7 @@ import matplotlib as mplt
 
 mplt.use('TkAgg')
 # coding: utf-8
+import os
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -16,11 +17,11 @@ import datetime
 
 mplt.use('TkAgg')
 
-data_folder  ='C:\\Users\\surendra\\Box Sync\\Learn\\Master Data Science'
+data_folder = os.path.dirname(os.path.abspath(__file__))
 
-filetoanalyse='UC_claims_made.xlsx'
+filetoanalyse = 'UC_claims_made.xlsx'
 
-df= pd.read_excel('C:\\Users\\surendra\\Box Sync\\Learn\\Master Data Science\\UC_claims_made.xlsx')
+df = pd.read_excel(os.path.join(data_folder, filetoanalyse))
 
 df.reset_index(inplace=True)
 
